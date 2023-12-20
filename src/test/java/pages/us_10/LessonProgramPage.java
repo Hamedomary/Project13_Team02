@@ -49,6 +49,11 @@ public class LessonProgramPage {
 
     @FindBy(xpath = "//div[contains(text(),'Error: start time must not be greater than or equa')]")
     public WebElement timeErrorAlert;
+    @FindBy(xpath = "//div[@class='mt-5 ms-3 me-3 text-center border border-3 shadow-sm bg-body rounded card border-warning']//div[2]//div[1]//div[1]//div[1]")
+    public WebElement startTimeRequiredMessage;
+    @FindBy(xpath = "//div[@class='mt-5 ms-3 me-3 text-center border border-3 shadow-sm bg-body rounded card border-warning']//div[2]//div[1]//div[1]//div[1]")
+    public WebElement stopTimeRequiredMessage;
+
 
 
 

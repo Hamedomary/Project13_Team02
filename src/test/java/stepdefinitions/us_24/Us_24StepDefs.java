@@ -8,9 +8,8 @@ import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import pages.us_09.LessonPage;
 import pages.us_09.LoginPage;
-import pages.us_09.TeacherManagementPage;
-import utilities.ConfigReader;
-import utilities.Driver;
+import pages.us_09.TeacherPage;
+import utilities.WaitUtils;
 
 public class Us_24StepDefs {
 
@@ -22,7 +21,7 @@ public class Us_24StepDefs {
     LoginPage loginPage = new LoginPage();
     LessonPage lessonPage = new LessonPage();
     Faker faker = new Faker();
-    TeacherManagementPage teacherManagementPage = new TeacherManagementPage();
+    TeacherPage teacherPage = new TeacherPage();
 
     String name;
     String surname;
@@ -35,75 +34,83 @@ public class Us_24StepDefs {
 
     @And("click Teacher Management")
     public void clickTeacherManagement() {
-        teacherManagementPage.teacherManagement.click();
+        teacherPage.teacherManagement.click();
+       // WaitUtils.waitForVisibility(teacherPage.chooseLessons,5);
+        WaitUtils.waitFor(10);
     }
 
     @And("choose lessons")
     public void chooseLessons() {
-        teacherManagementPage.chooseLessons.sendKeys("Literature"+ Keys.ENTER);
+        teacherPage.chooseLessons.sendKeys("Literature"+ Keys.ENTER);
     }
 
     @When("enter name, cannot be left blank")
     public void enterNameCannotBeLeftBlank() {
         name=faker.name().firstName();
-        teacherManagementPage.name.sendKeys(name);
+        teacherPage.name.sendKeys(name);
     }
 
     @And("enter surname,cannot be left blank")
     public void enterSurnameCannotBeLeftBlank() {
         surname=faker.name().lastName();
-        teacherManagementPage.surname.sendKeys(surname);
+        teacherPage.surname.sendKeys(surname);
     }
 
     @And("enter birth place,cannot be left blank")
     public void enterBirthPlaceCannotBeLeftBlank() {
-        teacherManagementPage.birthDay.sendKeys(faker.country().name());
+        String country = faker.country().name();
+        teacherPage.birthPlace.sendKeys(country);
+        System.out.println("country = " + country);
     }
 
     @And("enter email, cannot be left blank")
     public void enterEmailCannotBeLeftBlank() {
-        teacherManagementPage.email.sendKeys(faker.internet().emailAddress());
+        teacherPage.email.sendKeys(faker.internet().emailAddress());
     }
 
     @And("enter phone,cannot be left blank")
     public void enterPhoneCannotBeLeftBlank() {
-        teacherManagementPage.phoneNumber.sendKeys(faker.phoneNumber().phoneNumber());
+        teacherPage.phoneNumber.sendKeys(faker.number().digits(3) + "-" + faker.number().digits(3) + "-" + faker.number().digits(4));
 
     }
 
     @And("Select gender ,cannot be left blank")
     public void selectGenderCannotBeLeftBlank() {
-        teacherManagementPage.genderFemale.click();
+        teacherPage.genderFemale.click();
 
     }
 
     @And("enter date of birth, cannot be left blank")
     public void enterDateOfBirthCannotBeLeftBlank() {
-        teacherManagementPage.birthDay.sendKeys(String.valueOf(faker.date().birthday().getYear()) + Keys.TAB + faker.date().birthday().getMonth()
+        teacherPage.birthDay.sendKeys(String.valueOf(faker.date().birthday(3,60).getYear()) + Keys.TAB + faker.date().birthday().getMonth()
                                                             + faker.date().birthday().getDay());
 
     }
 
     @And("enter a valid SSN")
     public void enterAValidSSN() {
-        teacherManagementPage.ssn.sendKeys(faker.idNumber().ssnValid());
+        teacherPage.ssn.sendKeys(faker.idNumber().ssnValid());
 
     }
 
 
     @And("enter user name , cannot be left blank")
     public void enterUserNameCannotBeLeftBlank() {
-        teacherManagementPage.userName.sendKeys(faker.name().username());
+        teacherPage.userName.sendKeys(faker.name().username());
     }
 
     @And("enter a valid password")
     public void enterPassword() {
-        teacherManagementPage.password.sendKeys(faker.internet().password());
+        String password = faker.internet().password()+"A1";
+        teacherPage.password.sendKeys(password);
+        System.out.println("password = " + password);
+
     }
 
     @And("click submit button")
     public void clickSubmitButton() {
-        teacherManagementPage.submit.click();
+        teacherPage.submit.click();
+        WaitUtils.waitForVisibility(lessonPage.successMessage,5);
     }
 
     @Then("verify teacher is created")
@@ -114,7 +121,7 @@ public class Us_24StepDefs {
 
     @Then("verify error message is displayed")
     public void verifyErrorMessageIsDisplayed() {
-        Assert.assertTrue(teacherManagementPage.required.isDisplayed());
+        Assert.assertTrue(teacherPage.required.isDisplayed());
 
     }
 }

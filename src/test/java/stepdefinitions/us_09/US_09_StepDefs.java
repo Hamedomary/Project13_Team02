@@ -25,7 +25,7 @@ public class US_09_StepDefs {
         loginPage.firstLogin.click();
 
         switch (role){
-            case "viceDean":
+            case "ViceDean":
                 loginPage.userName.sendKeys(ConfigReader.getProperty("US_09_viceDean_username"));
                 loginPage.password.sendKeys(ConfigReader.getProperty("US_09_viceDean_password"));
             break;

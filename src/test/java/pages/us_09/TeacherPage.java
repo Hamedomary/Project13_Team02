@@ -5,8 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class TeacherManagementPage {
-    public TeacherManagementPage() {
+public class TeacherPage {
+    public TeacherPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
@@ -14,7 +14,7 @@ public class TeacherManagementPage {
     public WebElement teacherManagement;
 
 
-    @FindBy(linkText = "Select lesson")
+    @FindBy(xpath = "(//input)[1]")
     public WebElement chooseLessons;
 
     @FindBy(id = "name")
@@ -32,7 +32,7 @@ public class TeacherManagementPage {
     @FindBy(id = "phoneNumber")
     public WebElement phoneNumber;
 
-    @FindBy(xpath = "//label[contains(.,'Female')]")
+    @FindBy(xpath = "//input[@value='FEMALE']")
     public WebElement genderFemale;
 
     @FindBy(id = "birthDay")

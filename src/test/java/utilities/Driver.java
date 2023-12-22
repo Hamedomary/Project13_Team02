@@ -58,8 +58,8 @@ public class Driver {
         }
 
 //            driver -> driver.get()
-        driver.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-        driver.get().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+//        driver.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+//        driver.get().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
         driver.get().manage().window().maximize();
     }
     //    4. close driver

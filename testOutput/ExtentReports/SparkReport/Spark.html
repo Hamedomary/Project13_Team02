@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Regression Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Dec 20, 2023 03:55:38 pm</span></a>
+<a href="#"><span class="badge badge-primary">Dec 22, 2023 05:21:09 am</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Dec 20, 2023 03:55:38 pm</h3>
+<h3>Dec 22, 2023 05:21:09 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Dec 20, 2023 03:56:03 pm</h3>
+<h3>Dec 22, 2023 05:21:57 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -143,7 +143,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>13</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>22</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"google_search_feature":24.338
+"Teacher_visibility_in_the_teacher_list":47.237
 };
 </script>
 <div class="row">
@@ -172,7 +172,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@test5</td>
+<td>@Unit_Test</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -180,7 +180,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@Unit_Test</td>
+<td>@Test12</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -221,7 +221,7 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 13,
+passGrandChild: 22,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -246,7 +246,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@test5</a><a class="dropdown-item" href="#">@Unit_Test</a>
+<a class="dropdown-item" href="#">@Unit_Test</a><a class="dropdown-item" href="#">@Test12</a>
 </ul>
 </li>
 </ul>
@@ -257,9 +257,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">google_search_feature</p>
+            <p class="name">Teacher_visibility_in_the_teacher_list</p>
             <p class="text-sm">
-              <span>15:55:39</span> / <span>00:00:24:338</span>
+              <span>05:21:10</span> / <span>00:00:47:237</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -267,10 +267,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">google_search_feature</h5>
-<span class='badge badge-success'>12.20.2023 15:55:39</span>
-<span class='badge badge-danger'>12.20.2023 15:56:03</span>
-<span class='badge badge-default'>00:00:24:338</span>
+<h5 class="test-status text-pass">Teacher_visibility_in_the_teacher_list</h5>
+<span class='badge badge-success'>12.22.2023 05:21:10</span>
+<span class='badge badge-danger'>12.22.2023 05:21:57</span>
+<span class='badge badge-default'>00:00:47:237</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -282,7 +282,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC05 Unsuccessful lesson program creation</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC02_Successfully Updating teacher credentials</div>
       </div>
     </div>
         <div class="collapse">
@@ -312,38 +312,83 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_lesson_management_link()">
-                <span>And Clicks on Lesson Management link</span>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherManagement14.clicks_on_teacher_management_link()">
+                <span>And Clicks on teacher management link</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_lesson_program_button()">
-                <span>And Clicks on Lesson program button</span>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherCredentialsUpdating.clicks_on_edit_button()">
+                <span>And Clicks on edit button</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.selects_a_lesson_from_choose_lessons_drop_down()">
-                <span>And Selects a lesson from Choose Lessons dropDown</span>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherCredentialsUpdating.selects_a_lesson_from_choose_lessons_drop_down_in_teacher_edit_page()">
+                <span>And Selects a lesson from (choose lessons) dropDown in Teacher Edit page</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.selects_an_education_term_from_education_term_dropdown()">
-                <span>And Selects an education term from education term dropdown</span>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherCredentialsUpdating.enters_a_new_name_into_the_name_field(java.lang.String)">
+                <span>And Enters a new name "Angelina" into the Name field</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.selects_a_day_from_choose_day_dropdown()">
-                <span>And Selects a day from Choose day dropdown</span>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherCredentialsUpdating.enters_a_new_surname_into_the_surname_field(java.lang.String)">
+                <span>And Enters a new surname "Joli" into the Surname field</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.verifiesRequiredTextMessageIsAppearedUnderStartTimeField()">
-                <span>Then Verifies (Required) text message is appeared under start time field</span>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherCredentialsUpdating.enters_a_new_birth_place_into_the_birth_place_field(java.lang.String)">
+                <span>And Enters a new birth place "America" into the Birth place field</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.verifiesRequiredTextMessageIsAppearedUnderStopTimeField()">
-                <span>And Verifies (Required) text message is appeared under stop time field</span>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherCredentialsUpdating.enters_a_new_email_address_into_the_email_address_field()">
+                <span>And Enters a new Email address into the Email address field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherCredentialsUpdating.enters_a_new_phone_number_into_the_phone_number_field()">
+                <span>And Enters a new phone number into the phone number field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherCredentialsUpdating.enters_a_new_ssn_number_into_the_ssn_field()">
+                <span>And Enters a new Ssn number into the Ssn field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherCredentialsUpdating.clicks_on_is_advisor_teacher_checkbox_in_teacher_edit_page()">
+                <span>And Clicks on is advisor Teacher checkbox in Teacher edit page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherCredentialsUpdating.selects_male_as_the_gender_in_teacher_edit_page()">
+                <span>And Selects Male as the gender in teacher edit page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherCredentialsUpdating.enters_a_new_dob_into_the_date_of_birth_field(java.lang.String)">
+                <span>And Enters a new DOB "12121981" into the date of birth field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherCredentialsUpdating.enters_a_new_user_name_into_the_user_name_field()">
+                <span>And Enters a new User Name into the User Name field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherCredentialsUpdating.enters_a_new_valid_password_into_the_password_field(java.lang.String)">
+                <span>And Enters a new valid password "Nargis21130" into the password field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherCredentialsUpdating.clicks_on_submit_button_in_teacher_edit_page()">
+                <span>And Clicks on submit button in teacher edit page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherCredentialsUpdating.verifies_teacher_updated_successfully_message_is_appeared()">
+                <span>And Verifies teacher updated successfully message is appeared</span>
       <div>
       </div>
               </div>
@@ -380,42 +425,6 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@test5</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@test5</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>15:55:39 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>TC05 Unsuccessful lesson program creation</a>
-<div class="">
-<span class="badge badge-default">google_search_feature.TC05 Unsuccessful lesson program creation</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
 <p class="name">@Unit_Test</p>
 <p class="duration text-sm">1 tests</p>
 </div>
@@ -435,11 +444,47 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>15:55:39 pm</td>
+<td>05:21:10 am</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>TC05 Unsuccessful lesson program creation</a>
+<a href="#" class="linked" test-id='1' id='2'>TC02_Successfully Updating teacher credentials</a>
 <div class="">
-<span class="badge badge-default">google_search_feature.TC05 Unsuccessful lesson program creation</span>
+<span class="badge badge-default">Teacher_visibility_in_the_teacher_list.TC02_Successfully Updating teacher credentials</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Test12</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Test12</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>05:21:10 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>TC02_Successfully Updating teacher credentials</a>
+<div class="">
+<span class="badge badge-default">Teacher_visibility_in_the_teacher_list.TC02_Successfully Updating teacher credentials</span>
 </div>
 </td>
 </tr>

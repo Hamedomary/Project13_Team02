@@ -1,3 +1,4 @@
+@Smoke_Test0134
 Feature:Admin should be able to add Dean
 
   Background:

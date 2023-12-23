@@ -1,4 +1,4 @@
-@US_24
+
 Feature:Admin should be able to create a teacher.
 
   Scenario: TC_01 Successfully create a teacher

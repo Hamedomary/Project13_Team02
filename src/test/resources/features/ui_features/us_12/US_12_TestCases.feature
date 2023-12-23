@@ -1,4 +1,4 @@
-@US_12
+@Smoke_Test011
 Feature: lesson_feature
 
   Background: Login_to_the_Application for us12

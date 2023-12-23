@@ -1,4 +1,4 @@
-@US_09
+
 Feature: Vice Deans should be able to view the lesson list and make updates
   Scenario: TC_01 Lesson Name,Compulsory and Credit Score should be visible
     Given Login to the application as "ViceDean"

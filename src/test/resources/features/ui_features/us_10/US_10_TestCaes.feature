@@ -1,4 +1,4 @@
-@Unit_Test
+@Smoke_Test011
 Feature: google_search_feature
 
 Background: Login_to_the_Application

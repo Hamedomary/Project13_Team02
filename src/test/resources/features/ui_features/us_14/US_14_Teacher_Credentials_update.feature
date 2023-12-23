@@ -1,4 +1,4 @@
-@Unit_Test
+@Smoke_Test011
 Feature: Teacher_visibility_in_the_teacher_list
   Background:login_to_the_application
     Given User navigates to the homepage

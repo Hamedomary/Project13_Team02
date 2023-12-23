@@ -1,0 +1,2211 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Regression Test Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Regression Test Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Dec 23, 2023 03:58:23 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Dec 23, 2023 03:58:23 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Dec 23, 2023 04:03:34 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>3</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='75%'>
+<b>3</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='25%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='91%'><b>11</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='8%'><b>1</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='98%'><b>166</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>1</b> steps failed,
+<b>1</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"google_search_feature":118.245,"lesson_feature":84.793,"Teacher_visibility_in_the_teacher_list":46.249,"Teacher_visibility_in_the_teacher_list":60.854
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@Test12</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@US12_TC5</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Smoke_Test011</td>
+<td>11</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>91.667%</td>
+</tr>
+<tr>
+<td>@test1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@US12_TC1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Test2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@test5</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Test11</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@US12_TC3</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@US12_TC2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Test3</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@test4</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@US12_TC4</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>os</td>
+<td>Windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 3,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 11,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 166,
+failGrandChild: 1,
+warningGrandChild: 0,
+skipGrandChild: 1,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@Test12</a><a class="dropdown-item" href="#">@US12_TC5</a><a class="dropdown-item" href="#">@Smoke_Test011</a><a class="dropdown-item" href="#">@test1</a><a class="dropdown-item" href="#">@US12_TC1</a><a class="dropdown-item" href="#">@Test2</a><a class="dropdown-item" href="#">@test5</a><a class="dropdown-item" href="#">@Test11</a><a class="dropdown-item" href="#">@US12_TC3</a><a class="dropdown-item" href="#">@US12_TC2</a><a class="dropdown-item" href="#">@Test3</a><a class="dropdown-item" href="#">@test4</a><a class="dropdown-item" href="#">@US12_TC4</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">google_search_feature</p>
+            <p class="text-sm">
+              <span>15:58:24</span> / <span>00:01:58:245</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">google_search_feature</h5>
+<span class='badge badge-success'>12.23.2023 15:58:24</span>
+<span class='badge badge-danger'>12.23.2023 16:00:22</span>
+<span class='badge badge-default'>00:01:58:245</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC01 Lesson Program Creation by Vice Dean</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.user_navigates_to_the_homepage()">
+                <span>Given User navigates to the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_login_link()">
+                <span>When Clicks on Login link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.enters_the_username_and_password_into_corresponding_field()">
+                <span>And Enters the username and password into corresponding field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_login_button()">
+                <span>And Clicks on Login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_menu_button()">
+                <span>And Clicks on Menu button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_lesson_management_link()">
+                <span>And Clicks on Lesson Management link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_lesson_program_button()">
+                <span>And Clicks on Lesson program button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.selects_a_lesson_from_choose_lessons_drop_down()">
+                <span>And Selects a lesson from Choose Lessons dropDown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.selects_an_education_term_from_education_term_dropdown()">
+                <span>And Selects an education term from education term dropdown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.selects_a_day_from_choose_day_dropdown()">
+                <span>And Selects a day from Choose day dropdown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.enters_a_start_time_in_start_time_field()">
+                <span>And Enters a start time in Start Time field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.enters_a_stop_time_in_the_stop_time_field()">
+                <span>And Enters a Stop time in the Stop Time field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_submit_button()">
+                <span>And Clicks on Submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.verifies_the_lesson_created_program_message_is_appeared()">
+                <span>Then Verifies the (Lesson Created Program) message is appeared</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.closeTheDriver()">
+                <span>And close the driver</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="20"><span class="badge log pass-bg mr-2">Pass</span>TC02 Unsuccessful lesson program creation</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.user_navigates_to_the_homepage()">
+                <span>Given User navigates to the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_login_link()">
+                <span>When Clicks on Login link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.enters_the_username_and_password_into_corresponding_field()">
+                <span>And Enters the username and password into corresponding field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_login_button()">
+                <span>And Clicks on Login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_menu_button()">
+                <span>And Clicks on Menu button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_lesson_management_link()">
+                <span>And Clicks on Lesson Management link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_lesson_program_button()">
+                <span>And Clicks on Lesson program button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.selects_an_education_term_from_education_term_dropdown()">
+                <span>And Selects an education term from education term dropdown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.selects_a_day_from_choose_day_dropdown()">
+                <span>And Selects a day from Choose day dropdown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.enters_a_start_time_in_start_time_field()">
+                <span>And Enters a start time in Start Time field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.enters_a_stop_time_in_the_stop_time_field()">
+                <span>And Enters a Stop time in the Stop Time field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_submit_button()">
+                <span>And Clicks on Submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.verifies_the_lessons_must_not_empty_alert_message_is_appeared()">
+                <span>Then Verifies the (Lessons must not empty) alert message is appeared</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.closeTheDriver()">
+                <span>And close the driver</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="37"><span class="badge log pass-bg mr-2">Pass</span>TC03 Unsuccessful lesson program creation</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.user_navigates_to_the_homepage()">
+                <span>Given User navigates to the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_login_link()">
+                <span>When Clicks on Login link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.enters_the_username_and_password_into_corresponding_field()">
+                <span>And Enters the username and password into corresponding field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_login_button()">
+                <span>And Clicks on Login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_menu_button()">
+                <span>And Clicks on Menu button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_lesson_management_link()">
+                <span>And Clicks on Lesson Management link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_lesson_program_button()">
+                <span>And Clicks on Lesson program button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.selects_a_lesson_from_choose_lessons_drop_down()">
+                <span>And Selects a lesson from Choose Lessons dropDown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.selects_an_education_term_from_education_term_dropdown()">
+                <span>And Selects an education term from education term dropdown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.enters_a_start_time_in_start_time_field()">
+                <span>And Enters a start time in Start Time field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.enters_a_stop_time_in_the_stop_time_field()">
+                <span>And Enters a Stop time in the Stop Time field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_submit_button()">
+                <span>And Clicks on Submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.verifies_the_you_have_entered_an_invalid_value_valid_values_are_monday_tuesday_wednesday_thursday_friday_saturday_sunday_alert_message_is_appeared()">
+                <span>Then Verifies the (You have entered an invalid value. Valid values are: MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY) alert message is appeared</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.closeTheDriver()">
+                <span>And close the driver</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="54"><span class="badge log pass-bg mr-2">Pass</span>TC04 Unsuccessful lesson program creation</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.user_navigates_to_the_homepage()">
+                <span>Given User navigates to the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_login_link()">
+                <span>When Clicks on Login link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.enters_the_username_and_password_into_corresponding_field()">
+                <span>And Enters the username and password into corresponding field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_login_button()">
+                <span>And Clicks on Login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_menu_button()">
+                <span>And Clicks on Menu button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_lesson_management_link()">
+                <span>And Clicks on Lesson Management link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_lesson_program_button()">
+                <span>And Clicks on Lesson program button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.selects_a_lesson_from_choose_lessons_drop_down()">
+                <span>And Selects a lesson from Choose Lessons dropDown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.selects_an_education_term_from_education_term_dropdown()">
+                <span>And Selects an education term from education term dropdown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.selects_a_day_from_choose_day_dropdown()">
+                <span>And Selects a day from Choose day dropdown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.entersAsStartTimeInStartTimeField(java.lang.String)">
+                <span>And Enters "1200"as start time in Start Time field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.entersAStopTimeInTheStopTimeField(java.lang.String)">
+                <span>And Enters "0100"a Stop time in the Stop Time field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_submit_button()">
+                <span>And Clicks on Submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.verifiesTheErrorStartTimeMustNotBeGreaterThanOrEqualToStopTimeMessageIsAppeared()">
+                <span>Then Verifies the (Error: start time must not be greater than or equal to stop time) message is appeared</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.closeTheDriver()">
+                <span>And close the driver</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="72"><span class="badge log pass-bg mr-2">Pass</span>TC05 Unsuccessful lesson program creation</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.user_navigates_to_the_homepage()">
+                <span>Given User navigates to the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_login_link()">
+                <span>When Clicks on Login link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.enters_the_username_and_password_into_corresponding_field()">
+                <span>And Enters the username and password into corresponding field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_login_button()">
+                <span>And Clicks on Login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_menu_button()">
+                <span>And Clicks on Menu button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_lesson_management_link()">
+                <span>And Clicks on Lesson Management link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_lesson_program_button()">
+                <span>And Clicks on Lesson program button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.selects_a_lesson_from_choose_lessons_drop_down()">
+                <span>And Selects a lesson from Choose Lessons dropDown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.selects_an_education_term_from_education_term_dropdown()">
+                <span>And Selects an education term from education term dropdown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.selects_a_day_from_choose_day_dropdown()">
+                <span>And Selects a day from Choose day dropdown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.verifiesRequiredTextMessageIsAppearedUnderStartTimeField()">
+                <span>Then Verifies (Required) text message is appeared under start time field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.verifiesRequiredTextMessageIsAppearedUnderStopTimeField()">
+                <span>And Verifies (Required) text message is appeared under stop time field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.closeTheDriver()">
+                <span>And close the driver</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="88"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">lesson_feature</p>
+            <p class="text-sm">
+              <span>16:00:22</span> / <span>00:01:24:793</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">lesson_feature</h5>
+<span class='badge badge-success'>12.23.2023 16:00:22</span>
+<span class='badge badge-danger'>12.23.2023 16:01:47</span>
+<span class='badge badge-default'>00:01:24:793</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=88</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="89"><span class="badge log pass-bg mr-2">Pass</span>TC01 Choose lesson display</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.user_navigates_to_the_homepage_for_us12()">
+                <span>Given User navigates to the homepage for us12</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.clicks_on_login_link_for_us12()">
+                <span>When Clicks on Login link for us12</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.enters_the_username_and_password_for_us_12()">
+                <span>And Enters the username and password for us12</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.clicks_on_login_button_for_us12()">
+                <span>And Clicks on Login button for us12</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.clicks_on_lesson_program_button_for_us12()">
+                <span>And Clicks on Lesson program button for us12</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.selects_lesson_from_the_lessons_drop_down(java.lang.String)">
+                <span>And Select Music lesson from the lessons dropDown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.closeTheDriverForUs12()">
+                <span>And close the driver for us12</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="99"><span class="badge log pass-bg mr-2">Pass</span>TC02 Course Schedule Creation</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.user_navigates_to_the_homepage_for_us12()">
+                <span>Given User navigates to the homepage for us12</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.clicks_on_login_link_for_us12()">
+                <span>When Clicks on Login link for us12</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.enters_the_username_and_password_for_us_12()">
+                <span>And Enters the username and password for us12</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.clicks_on_login_button_for_us12()">
+                <span>And Clicks on Login button for us12</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.clicks_on_lesson_program_button_for_us12()">
+                <span>And Clicks on Lesson program button for us12</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.selects_lesson_from_the_lessons_drop_down(java.lang.String)">
+                <span>And Select sql lesson from the lessons dropDown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.selects_education_term_from_the_education_term_dropdown(java.lang.String)">
+                <span>And Selects 15 from the education term dropdown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.selects_from_the_day_dropdown(java.lang.String)">
+                <span>And Selects FRIDAY from the day dropdown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.enters_time_in_the_start_time_field(java.lang.String)">
+                <span>And Enters 1100 time in the start time field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.enters_stop_time_in_the_stop_time_field(java.lang.String)">
+                <span>And Enters 1200 time in the stop time field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.clicks_on_submit_button_for_US12()">
+                <span>And Clicks on Submit button for US12</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.verify_the_message_is_appeared_for_add_lesson_program()">
+                <span>Then Verify the message is appeared for add lesson program</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.closeTheDriverForUs12()">
+                <span>And close the driver for us12</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="115"><span class="badge log pass-bg mr-2">Pass</span>TC03 Lesson Program Assignment</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.user_navigates_to_the_homepage_for_us12()">
+                <span>Given User navigates to the homepage for us12</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.clicks_on_login_link_for_us12()">
+                <span>When Clicks on Login link for us12</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.enters_the_username_and_password_for_us_12()">
+                <span>And Enters the username and password for us12</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.clicks_on_login_button_for_us12()">
+                <span>And Clicks on Login button for us12</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.clicks_on_lesson_program_button_for_us12()">
+                <span>And Clicks on Lesson program button for us12</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.selects_lesson_from_the_lessons_drop_down(java.lang.String)">
+                <span>And Select sql lesson from the lessons dropDown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.selects_education_term_from_the_education_term_dropdown(java.lang.String)">
+                <span>And Selects 15 from the education term dropdown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.selects_from_the_day_dropdown(java.lang.String)">
+                <span>And Selects FRIDAY from the day dropdown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.enters_time_in_the_start_time_field(java.lang.String)">
+                <span>And Enters 1100 time in the start time field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.enters_stop_time_in_the_stop_time_field(java.lang.String)">
+                <span>And Enters 1200 time in the stop time field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.clicks_on_submit_button_for_US12()">
+                <span>And Clicks on Submit button for US12</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.verify_the_message_is_appeared_for_add_lesson_program()">
+                <span>Then Verify the message is appeared for add lesson program</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.verify_the_record_shown_in_the_lesson_program_assignment(java.lang.String,java.lang.String,java.lang.String,java.lang.String)">
+                <span>Then Verify the record shown in the Lesson Program Assignment sql FRIDAY 11:00:00 12:00:00</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.closeTheDriverForUs12()">
+                <span>And close the driver for us12</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="132"><span class="badge log fail-bg mr-2">Fail</span>TC04 Teacher Selection for Lesson</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.user_navigates_to_the_homepage_for_us12()">
+                <span>Given User navigates to the homepage for us12</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.clicks_on_login_link_for_us12()">
+                <span>When Clicks on Login link for us12</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.enters_the_username_and_password_for_us_12()">
+                <span>And Enters the username and password for us12</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.clicks_on_login_button_for_us12()">
+                <span>And Clicks on Login button for us12</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.clicks_on_lesson_program_button_for_us12()">
+                <span>And Clicks on Lesson program button for us12</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.selects_the_last_record_in_the_lesson_table()">
+                <span>And Selects the last record in the lesson table</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.selects_index_from_teacher_dropdown(java.lang.Integer)">
+                <span>Then Selects 5 index from teacher dropdown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.clicks_teacher_submit_button()">
+                <span>Then Clicks teacher submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefinitions.us_12.Us12StepDefinition.verify_the_message_is_appeared_for_teacher_added_to_lesson()">
+                <span>Then Verify the message is appeared for teacher added to lesson</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[contains(text(),'Lesson added to Teacher')]' (tried for 3 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at utilities.WaitUtils.waitForVisibility(WaitUtils.java:55)
+	at stepdefinitions.us_12.Us12StepDefinition.verify_the_message_is_appeared_for_teacher_added_to_lesson(Us12StepDefinition.java:97)
+	at ✽.Verify the message is appeared for teacher added to lesson(file:///C:/Users/omary/Downloads/Project13_Cucumber/src/test/resources/features/ui_features/us_12/US_12_TestCases.feature:44)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Lesson added to Teacher')]"}
+  (Session info: chrome=120.0.6099.129)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [adc139b7d050390098d483b1b73e45e9, findElement {using=xpath, value=//div[contains(text(),'Lesson added to Teacher')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.129, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\omary\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63128}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63128/devtoo..., se:cdpVersion: 120.0.6099.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: adc139b7d050390098d483b1b73e45e9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at jdk.internal.reflect.GeneratedMethodAccessor43.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invokeUnderlying(ThreadGuard.java:99)
+	at org.openqa.selenium.support.ThreadGuard$WebDriverInvocationHandler.invoke(ThreadGuard.java:91)
+	at com.sun.proxy.$Proxy22.findElement(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy25.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	at utilities.WaitUtils.waitForVisibility(WaitUtils.java:55)
+	at stepdefinitions.us_12.Us12StepDefinition.verify_the_message_is_appeared_for_teacher_added_to_lesson(Us12StepDefinition.java:97)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.us_12.Us12StepDefinition.closeTheDriverForUs12()">
+                <span>And close the driver for us12</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.Hooks.afterTearDown(io.cucumber.java.Scenario)</span>
+      <div>failed_screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded1.png' src="../embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="145"><span class="badge log pass-bg mr-2">Pass</span>TC05 Verify Teacher Assignment without choosing lesson</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.user_navigates_to_the_homepage_for_us12()">
+                <span>Given User navigates to the homepage for us12</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.clicks_on_login_link_for_us12()">
+                <span>When Clicks on Login link for us12</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.enters_the_username_and_password_for_us_12()">
+                <span>And Enters the username and password for us12</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.clicks_on_login_button_for_us12()">
+                <span>And Clicks on Login button for us12</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.clicks_on_lesson_program_button_for_us12()">
+                <span>And Clicks on Lesson program button for us12</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.selects_index_from_teacher_dropdown(java.lang.Integer)">
+                <span>Then Selects 5 index from teacher dropdown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.clicks_teacher_submit_button()">
+                <span>Then Clicks teacher submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.verify_the_error_message_is_appeared_for_teacher_added_to_lesson()">
+                <span>Then Verify the error message is appeared for teacher added to lesson</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_12.Us12StepDefinition.closeTheDriverForUs12()">
+                <span>And close the driver for us12</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="157"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Teacher_visibility_in_the_teacher_list</p>
+            <p class="text-sm">
+              <span>16:01:47</span> / <span>00:00:46:249</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Teacher_visibility_in_the_teacher_list</h5>
+<span class='badge badge-success'>12.23.2023 16:01:47</span>
+<span class='badge badge-danger'>12.23.2023 16:02:33</span>
+<span class='badge badge-default'>00:00:46:249</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=157</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="158"><span class="badge log pass-bg mr-2">Pass</span>TC02_Successfully Updating teacher credentials</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.user_navigates_to_the_homepage()">
+                <span>Given User navigates to the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_login_link()">
+                <span>When Clicks on Login link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.enters_the_username_and_password_into_corresponding_field()">
+                <span>And Enters the username and password into corresponding field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_login_button()">
+                <span>And Clicks on Login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_menu_button()">
+                <span>And Clicks on Menu button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherManagement14.clicks_on_teacher_management_link()">
+                <span>And Clicks on teacher management link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherCredentialsUpdating.clicks_on_edit_button()">
+                <span>And Clicks on edit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherCredentialsUpdating.selects_a_lesson_from_choose_lessons_drop_down_in_teacher_edit_page()">
+                <span>And Selects a lesson from (choose lessons) dropDown in Teacher Edit page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherCredentialsUpdating.enters_a_new_name_into_the_name_field(java.lang.String)">
+                <span>And Enters a new name "Angelina" into the Name field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherCredentialsUpdating.enters_a_new_surname_into_the_surname_field(java.lang.String)">
+                <span>And Enters a new surname "Joli" into the Surname field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherCredentialsUpdating.enters_a_new_birth_place_into_the_birth_place_field(java.lang.String)">
+                <span>And Enters a new birth place "America" into the Birth place field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherCredentialsUpdating.enters_a_new_email_address_into_the_email_address_field()">
+                <span>And Enters a new Email address into the Email address field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherCredentialsUpdating.enters_a_new_phone_number_into_the_phone_number_field()">
+                <span>And Enters a new phone number into the phone number field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherCredentialsUpdating.enters_a_new_ssn_number_into_the_ssn_field()">
+                <span>And Enters a new Ssn number into the Ssn field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherCredentialsUpdating.clicks_on_is_advisor_teacher_checkbox_in_teacher_edit_page()">
+                <span>And Clicks on is advisor Teacher checkbox in Teacher edit page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherCredentialsUpdating.selects_male_as_the_gender_in_teacher_edit_page()">
+                <span>And Selects Male as the gender in teacher edit page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherCredentialsUpdating.enters_a_new_dob_into_the_date_of_birth_field(java.lang.String)">
+                <span>And Enters a new DOB "12121981" into the date of birth field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherCredentialsUpdating.enters_a_new_user_name_into_the_user_name_field()">
+                <span>And Enters a new User Name into the User Name field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherCredentialsUpdating.enters_a_new_valid_password_into_the_password_field(java.lang.String)">
+                <span>And Enters a new valid password "Nargis21130" into the password field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherCredentialsUpdating.clicks_on_submit_button_in_teacher_edit_page()">
+                <span>And Clicks on submit button in teacher edit page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherCredentialsUpdating.verifies_teacher_updated_successfully_message_is_appeared()">
+                <span>And Verifies teacher updated successfully message is appeared</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.closeTheDriver()">
+                <span>And close the driver</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="183"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Teacher_visibility_in_the_teacher_list</p>
+            <p class="text-sm">
+              <span>16:02:33</span> / <span>00:01:00:854</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Teacher_visibility_in_the_teacher_list</h5>
+<span class='badge badge-success'>12.23.2023 16:02:33</span>
+<span class='badge badge-danger'>12.23.2023 16:03:34</span>
+<span class='badge badge-default'>00:01:00:854</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=183</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="184"><span class="badge log pass-bg mr-2">Pass</span>TC_01 Created teacher (Name, phone, Ssn and Username) visibility in the teacher list</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.user_navigates_to_the_homepage()">
+                <span>Given User navigates to the homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_login_link()">
+                <span>When Clicks on Login link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.enters_the_username_and_password_into_corresponding_field()">
+                <span>And Enters the username and password into corresponding field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_login_button()">
+                <span>And Clicks on Login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.clicks_on_menu_button()">
+                <span>And Clicks on Menu button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherManagement14.clicks_on_teacher_management_link()">
+                <span>And Clicks on teacher management link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherManagement14.selects_a_lesson_from_choose_lessons_to_create_a_teacher()">
+                <span>And Selects a lesson from (choose lessons) to create a teacher</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherManagement14.enters_a_name_into_the_name_field(java.lang.String)">
+                <span>And Enters a name "Maximelium13" into the Name field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherManagement14.enters_a_surname_into_the_surname_field(java.lang.String)">
+                <span>And Enters a surname "Rey" into the Surname field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherManagement14.enters_a_birth_place_into_the_birth_place_field(java.lang.String)">
+                <span>And Enters a birth place "Spain" into the Birth place field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherManagement14.entersAnEmailAddressIntoTheEmailAddressField()">
+                <span>And Enters an Email address into the Email address field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherManagement14.enters_a_phone_number_into_the_phone_number_field()">
+                <span>And Enters a phone number into the phone number field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherManagement14.clicks_on_is_advisor_teacher_checkbox()">
+                <span>And Clicks on is advisor Teacher checkbox</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherManagement14.selects_male_as_the_gender()">
+                <span>And Selects Male as the gender</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherManagement14.enters_a_dob_into_the_date_of_birth_field(java.lang.String)">
+                <span>And Enters a DOB "12121991" into the date of birth field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherManagement14.enters_a_ssn_number_into_the_ssn_field()">
+                <span>And Enters a Ssn number into the Ssn field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherManagement14.entersAUserNameIntoTheUserNameField()">
+                <span>And Enters a User Name into the User Name field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherManagement14.enters_a_valid_password_into_the_password_field(java.lang.String)">
+                <span>And Enters a valid password "Nargis211300" into the password field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherManagement14.clicks_on_submit_button()">
+                <span>And Clicks on submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_14.TeacherManagement14.verifyTeacherNamePhoneNumberSsnAndUsernameAreVisibleInTheTeacherList()">
+                <span>And Verify teacher ( Name, phone number, Ssn and Username ) are visible in the teacher list</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.us_10.ItemSearchGoogle.closeTheDriver()">
+                <span>And close the driver</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">13</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Test12</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Test12</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:01:47 pm</td>
+<td>
+<a href="#" class="linked" test-id='157' id='158'>TC02_Successfully Updating teacher credentials</a>
+<div class="">
+<span class="badge badge-default">Teacher_visibility_in_the_teacher_list.TC02_Successfully Updating teacher credentials</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@US12_TC5</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US12_TC5</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:01:35 pm</td>
+<td>
+<a href="#" class="linked" test-id='88' id='145'>TC05 Verify Teacher Assignment without choosing lesson</a>
+<div class="">
+<span class="badge badge-default">lesson_feature.TC05 Verify Teacher Assignment without choosing lesson</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>11</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Smoke_Test011</p>
+<p class="duration text-sm">12 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Smoke_Test011</h4>
+<span status="pass" class='badge log pass-bg'>11 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:58:24 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>TC01 Lesson Program Creation by Vice Dean</a>
+<div class="">
+<span class="badge badge-default">google_search_feature.TC01 Lesson Program Creation by Vice Dean</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:58:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='20'>TC02 Unsuccessful lesson program creation</a>
+<div class="">
+<span class="badge badge-default">google_search_feature.TC02 Unsuccessful lesson program creation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:59:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='37'>TC03 Unsuccessful lesson program creation</a>
+<div class="">
+<span class="badge badge-default">google_search_feature.TC03 Unsuccessful lesson program creation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:59:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='54'>TC04 Unsuccessful lesson program creation</a>
+<div class="">
+<span class="badge badge-default">google_search_feature.TC04 Unsuccessful lesson program creation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:00:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='72'>TC05 Unsuccessful lesson program creation</a>
+<div class="">
+<span class="badge badge-default">google_search_feature.TC05 Unsuccessful lesson program creation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:00:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='88' id='89'>TC01 Choose lesson display</a>
+<div class="">
+<span class="badge badge-default">lesson_feature.TC01 Choose lesson display</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:00:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='88' id='99'>TC02 Course Schedule Creation</a>
+<div class="">
+<span class="badge badge-default">lesson_feature.TC02 Course Schedule Creation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:00:55 pm</td>
+<td>
+<a href="#" class="linked" test-id='88' id='115'>TC03 Lesson Program Assignment</a>
+<div class="">
+<span class="badge badge-default">lesson_feature.TC03 Lesson Program Assignment</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:01:17 pm</td>
+<td>
+<a href="#" class="linked" test-id='88' id='132'>TC04 Teacher Selection for Lesson</a>
+<div class="">
+<span class="badge badge-default">lesson_feature.TC04 Teacher Selection for Lesson</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:01:35 pm</td>
+<td>
+<a href="#" class="linked" test-id='88' id='145'>TC05 Verify Teacher Assignment without choosing lesson</a>
+<div class="">
+<span class="badge badge-default">lesson_feature.TC05 Verify Teacher Assignment without choosing lesson</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:01:47 pm</td>
+<td>
+<a href="#" class="linked" test-id='157' id='158'>TC02_Successfully Updating teacher credentials</a>
+<div class="">
+<span class="badge badge-default">Teacher_visibility_in_the_teacher_list.TC02_Successfully Updating teacher credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:02:33 pm</td>
+<td>
+<a href="#" class="linked" test-id='183' id='184'>TC_01 Created teacher (Name, phone, Ssn and Username) visibility in the teacher list</a>
+<div class="">
+<span class="badge badge-default">Teacher_visibility_in_the_teacher_list.TC_01 Created teacher (Name, phone, Ssn and Username) visibility in the teacher list</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@test1</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@test1</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:58:24 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>TC01 Lesson Program Creation by Vice Dean</a>
+<div class="">
+<span class="badge badge-default">google_search_feature.TC01 Lesson Program Creation by Vice Dean</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@US12_TC1</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US12_TC1</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:00:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='88' id='89'>TC01 Choose lesson display</a>
+<div class="">
+<span class="badge badge-default">lesson_feature.TC01 Choose lesson display</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Test2</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Test2</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:58:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='20'>TC02 Unsuccessful lesson program creation</a>
+<div class="">
+<span class="badge badge-default">google_search_feature.TC02 Unsuccessful lesson program creation</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@test5</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@test5</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:00:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='72'>TC05 Unsuccessful lesson program creation</a>
+<div class="">
+<span class="badge badge-default">google_search_feature.TC05 Unsuccessful lesson program creation</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Test11</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Test11</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:02:33 pm</td>
+<td>
+<a href="#" class="linked" test-id='183' id='184'>TC_01 Created teacher (Name, phone, Ssn and Username) visibility in the teacher list</a>
+<div class="">
+<span class="badge badge-default">Teacher_visibility_in_the_teacher_list.TC_01 Created teacher (Name, phone, Ssn and Username) visibility in the teacher list</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@US12_TC3</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US12_TC3</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:00:55 pm</td>
+<td>
+<a href="#" class="linked" test-id='88' id='115'>TC03 Lesson Program Assignment</a>
+<div class="">
+<span class="badge badge-default">lesson_feature.TC03 Lesson Program Assignment</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@US12_TC2</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US12_TC2</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:00:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='88' id='99'>TC02 Course Schedule Creation</a>
+<div class="">
+<span class="badge badge-default">lesson_feature.TC02 Course Schedule Creation</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Test3</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Test3</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:59:16 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='37'>TC03 Unsuccessful lesson program creation</a>
+<div class="">
+<span class="badge badge-default">google_search_feature.TC03 Unsuccessful lesson program creation</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@test4</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@test4</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:59:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='54'>TC04 Unsuccessful lesson program creation</a>
+<div class="">
+<span class="badge badge-default">google_search_feature.TC04 Unsuccessful lesson program creation</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@US12_TC4</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US12_TC4</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:01:17 pm</td>
+<td>
+<a href="#" class="linked" test-id='88' id='132'>TC04 Teacher Selection for Lesson</a>
+<div class="">
+<span class="badge badge-default">lesson_feature.TC04 Teacher Selection for Lesson</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.TimeoutException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.TimeoutException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:01:32 pm</td>
+<td>
+<a href="#" class="linked" test-id='88' id='142'>Then Verify the message is appeared for teacher added to lesson</a>
+<div class="">
+<span class="badge badge-default">lesson_feature.TC04 Teacher Selection for Lesson.Then Verify the message is appeared for teacher added to lesson</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

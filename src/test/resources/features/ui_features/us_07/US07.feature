@@ -1,4 +1,4 @@
-@smoke_test
+
 Feature: search_delete_button_feature
   Background: navigate_to_managementonschools
     Given user navigates to "https://managementonschools.com/"

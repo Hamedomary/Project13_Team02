@@ -4,8 +4,11 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
+import org.openqa.selenium.Keys;
 import pages.us_07.US07Page;
+import utilities.ConfigReader;
 import utilities.Driver;
+
 
 public class US07StepDef {
   ;
@@ -14,7 +17,7 @@ public class US07StepDef {
 
     @Given("user navigates to {string}")
     public void user_navigates_to(String string) {
-        Driver.getDriver().get("https://managementonschools.com/");
+        Driver.getDriver().get("url");
     }
 
     @And("user click on login button on managementonschools")
@@ -23,13 +26,13 @@ public class US07StepDef {
     }
     @And("user enters username {string}")
     public void user_enters_username(String string) {
-        us07_Page.userName.sendKeys("DeanGul");
+        us07_Page.userName.sendKeys("DeanGul", Keys.ENTER);
     }
 
     @And("user enters password {string}")
     public void user_enters_password(String string) {
 
-        us07_Page.password.sendKeys("DeanGul123");
+        us07_Page.password.sendKeys("DeanGul123", Keys.ENTER);
     }
     @And("user clicks on the login button")
     public void userClicksOnTheLoginButton() {
@@ -65,7 +68,7 @@ public class US07StepDef {
 
         @Given("user navigate the page")
         public void user_navigate_the_page() {
-           us07_Page.contactMessages.getText().contains("Contact Message");
+           us07_Page.contactMessages.sendKeys(ConfigReader.getProperty("Contact Message"));
 
     }
 
@@ -77,7 +80,7 @@ public class US07StepDef {
 
         @Given("user explore the page")
         public void user_explore_the_page() {
-            us07_Page.contactMessages.getText().contains("Contact Messages");
+            us07_Page.contactMessages.sendKeys(ConfigReader.getProperty("Contact Messages"));
 
         }
 

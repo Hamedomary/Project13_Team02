@@ -8,11 +8,12 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
 
+import java.time.Duration;
+
+import static baseurls.BaseUrl.setUp;
+
 public class Hooks {
-    @Before
-    public void setUpScenarios(){
-//        System.out.println("Before Hooks");
-    }
+
     @After
     public void afterTearDown(Scenario scenario){
 //        System.out.println("After Hooks");
@@ -24,10 +25,18 @@ public class Hooks {
         }
     }
 
-    //    we can use conditional hooks using cucumber tags
-    @After("@tea_pot or @data_tables")
-    public void afterAllTearDown(){
-        System.out.println("This runs only after @tea_pot or @data_tables");
+    @Before ("@UI")
+    public static void before_ui(){
+        Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        Driver.getDriver().manage().window().maximize();
     }
+    @After ("@UI")
+    public static void tearDown(){
+        Driver.closeDriver();
+    }
+//    @Before("@API")
+//    public static void beforeApi(){
+//        setUp("ViceDeanHamed","Nargis211400");
+//    }
 }
 

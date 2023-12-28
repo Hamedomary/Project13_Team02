@@ -1,10 +1,8 @@
 package stepdefinitions.us_21;
 
-
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-
 import org.junit.Assert;
 import pages.us_21.StudentLocators;
 import pages.us_21.StudentUtilities;
@@ -13,6 +11,7 @@ import utilities.JSUtils;
 import java.util.List;
 
 public class StudentStepDefinitions {
+
     StudentLocators studentLocators = new StudentLocators();
 
     @Then("the student should see lesson management details")
@@ -24,7 +23,7 @@ public class StudentStepDefinitions {
     @When("the student should be able to choose lesson")
     public void theStudentShouldBeAbleToChooseLesson() {
         studentLocators.chooseLesson.click();
-        JSUtils.JSscrollIntoView( studentLocators.chooseLessonSubmitButton);
+        JSUtils.JSscrollIntoView(studentLocators.chooseLessonSubmitButton);
         studentLocators.chooseLessonSubmitButton.click();
     }
 
@@ -58,6 +57,6 @@ public class StudentStepDefinitions {
 
     @Then("the student should be able to see the grades")
     public void theStudentShouldBeAbleToSeeTheGrades() {
-        Assert.assertTrue(studentLocators.seeStudentGradesInList.size()>0);
+        Assert.assertTrue(studentLocators.seeStudentGradesInList.size() > 0);
     }
 }

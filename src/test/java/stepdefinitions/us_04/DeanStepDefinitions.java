@@ -20,6 +20,7 @@ public class DeanStepDefinitions {
 
     public static final DeanLocators deanLocotar = new DeanLocators();
     Faker faker = new Faker();
+    String username;
 
     @Given("the user goes to managementonschools page")
     public void theUserGoesToManagementonschoolsPage() {
@@ -58,21 +59,21 @@ public class DeanStepDefinitions {
         deanLocotar.deanManagementAddName.sendKeys(faker.name().firstName());
         deanLocotar.deanManagementAddSurname.sendKeys(faker.name().lastName());
         Date birthday = faker.date().birthday();
-        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         String formattedBirthday = dateFormat.format(birthday);
         if (negation.equals("valid")) {
             deanLocotar.deanManagementAddBirthPlace.sendKeys(faker.address().city());
         } else {
             deanLocotar.deanManagementAddBirthPlace.sendKeys(formattedBirthday);
         }
-        deanLocotar.deanManagementAddPhone.sendKeys(faker.number().numberBetween(100, 999) +
-                "-" + faker.number().numberBetween(100, 999) + "-" + faker.number().numberBetween(1000, 9999));
-        deanLocotar.deanManagementAddSsn.sendKeys(faker.number().numberBetween(100, 999) +
-                "-" + faker.number().numberBetween(10, 99) + "-" + faker.number().numberBetween(1000, 9999));
+        deanLocotar.deanManagementAddPhone.sendKeys(faker.numerify("###").concat("-").concat(faker.numerify("###")).concat("-")
+                .concat(faker.numerify("####")));
+        deanLocotar.deanManagementAddSsn.sendKeys(faker.numerify("###").concat("-").concat(faker.numerify("##")).concat("-")
+                .concat(faker.numerify("####")));
         deanLocotar.deanManagementAddBirthDay.sendKeys(formattedBirthday);
         deanLocotar.genderFemale.click();
-        String username = faker.name().username();
-        deanLocotar.deanManagementAddUsername.sendKeys("username");
+         username = faker.name().username();
+        deanLocotar.deanManagementAddUsername.sendKeys(username);
         deanLocotar.deanManagementAddPassword.sendKeys((faker.name().firstName()).toLowerCase(Locale.ROOT).concat(faker.number().digit()).concat(faker.name().lastName().toUpperCase(Locale.ROOT)));
     }
 
@@ -90,7 +91,6 @@ public class DeanStepDefinitions {
     public void theNewDeanCreatedSuccessfully() {
         Assert.assertTrue(deanLocotar.deanSavedPopUp.isDisplayed());
     }
-
 
     @Then("the new dean should not be created successfully")
     public void theNewDeanShouldNotBeCreatedSuccessfully() {

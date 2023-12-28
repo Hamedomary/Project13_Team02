@@ -1,6 +1,5 @@
 package stepdefinitions.us_09;
 
-import com.github.javafaker.Faker;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -9,7 +8,7 @@ import pages.us_09.LessonPage;
 import pages.us_09.LoginPage;
 import utilities.*;
 
-public class US_09_StepDefs {
+public class US_09_UIStepDefs {
 
 
     LoginPage loginPage = new LoginPage();

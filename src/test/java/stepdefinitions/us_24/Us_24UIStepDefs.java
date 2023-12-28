@@ -11,7 +11,7 @@ import pages.us_09.LoginPage;
 import pages.us_09.TeacherPage;
 import utilities.WaitUtils;
 
-public class Us_24StepDefs {
+public class Us_24UIStepDefs {
 
 //    @Given("Login to the application")
 //    public void login_to_the_application() {

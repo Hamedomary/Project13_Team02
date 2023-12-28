@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
         features = "./src/test/resources/features/api_features",//path of the features folder
         glue = "stepdefinitions",//path of the stepdefinitions folder
         dryRun = false, //generate the missing step definitions only. Do not run the existing step definitions
-        tags = ""
+        tags = "@US_09API"
 )
 public class ApiRunner {
 }

@@ -1,25 +1,36 @@
 package stepdefinitions.us_12;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import pages.us_10.HomePage;
 import pages.us_10.LoginPage;
 import pages.us_12.LessonProgramPageForUs12;
+import pojos.us_12.ChooseLessonForTeacher;
+import pojos.us_12.LessonProgramSave;
 import utilities.*;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import java.util.Arrays;
+import java.util.Map;
+
+import static baseurls.BaseUrl.setUp;
+import static baseurls.BaseUrl.spec;
+import static io.restassured.RestAssured.given;
+import static org.junit.Assert.*;
 
 public class Us12StepDefinition {
 
     HomePage homePage = new HomePage();
     LessonProgramPageForUs12 lessonProgramPage = new LessonProgramPageForUs12();
     LoginPage loginPage = new LoginPage();
+    String lessonProgramId;
 
     @Given("User navigates to the homepage for us12")
     public void user_navigates_to_the_homepage_for_us12() {
@@ -134,6 +145,72 @@ public class Us12StepDefinition {
         WaitUtils.waitFor(2);
         lessonProgramPage.teacherSubmitButton.click();
     }
+
+    @Given("user is authorised with {string} and {string}")
+    public void userIsAuthorisedWithUsernameAndPassword(String username, String password) {
+        setUp(username, password);
+    }
+
+    @When("user save {} lesson program for {} {} {} {}")
+    public void userSaveLessonProgram(Long lessonId, String day, String startTime, String stopTime, String educationTermId) {
+        LessonProgramSave lessonProgramSave = new LessonProgramSave();
+        lessonProgramSave.setLessonIdList(Arrays.asList(lessonId));
+        lessonProgramSave.setDay(day);
+        lessonProgramSave.setStartTime(startTime);
+        lessonProgramSave.setStopTime(stopTime);
+        lessonProgramSave.setEducationTermId(educationTermId);
+
+        Response response = given(spec).body(lessonProgramSave).post("/lessonPrograms/save");
+        lessonProgramId = response.jsonPath().getString("object.lessonProgramId");
+
+        assertEquals(200, response.getStatusCode());
+        assertNotNull(lessonProgramId);
+
+    }
+
+    @Then("lesson should be in unassigned program list for {} {} {}")
+    public void lessonShouldBeInUnassignedProgramList(String day, String startTime, String stopTime) {
+        Response response = given(spec).get("lessonPrograms/getAllUnassigned");
+
+        assertEquals(200, response.getStatusCode());
+
+        JsonPath jsonPath = response.jsonPath();
+        Map<String, String> lessonProgramMap = jsonPath.getMap("find {it.lessonProgramId == " + lessonProgramId + "}");
+        assertEquals(startTime, lessonProgramMap.get("startTime"));
+        assertEquals(stopTime, lessonProgramMap.get("stopTime"));
+        assertEquals(day, lessonProgramMap.get("day"));
+    }
+
+    @And("user assign lesson to teacher {}")
+    public void userAssignLessonToTeacher(Long teacherId) {
+        ChooseLessonForTeacher chooseLessonForTeacher = new ChooseLessonForTeacher();
+        chooseLessonForTeacher.setLessonProgramId(Arrays.asList(lessonProgramId));
+        chooseLessonForTeacher.setTeacherId(teacherId);
+
+        Response response = given(spec).body(chooseLessonForTeacher).post("/teachers/chooseLesson");
+
+        assertEquals(200, response.getStatusCode());
+
+    }
+
+    @Then("lesson should not be in unassigned program list")
+    public void lessonShouldNotBeInUnassignedProgramList() {
+        Response response = given(spec).get("lessonPrograms/getAllUnassigned");
+
+        assertEquals(200, response.getStatusCode());
+
+        JsonPath jsonPath = response.jsonPath();
+        Map<String, String> lessonProgramMap = jsonPath.getMap("find {it.lessonProgramId == " + lessonProgramId + "}");
+        assertNull(lessonProgramMap);
+    }
+
+    @Then("delete lesson program")
+    public void deleteLessonProgram() {
+        Response response = given(spec).delete("lessonPrograms/delete/" + lessonProgramId);
+
+        assertEquals(200, response.getStatusCode());
+    }
+
 
 
     @And("close the driver for us12")

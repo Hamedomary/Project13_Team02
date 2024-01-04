@@ -9,7 +9,7 @@ import pages.us_17.US17_TeacherLocators;
 import utilities.ConfigReader;
 import utilities.WaitUtils;
 
-public class US17_TeacherStepDefinitions {
+public class US17_UI_TeacherStepDefinitions {
     US17_TeacherLocators teacherLocators = new US17_TeacherLocators();
 
     String username = ConfigReader.getProperty("username");

@@ -1,4 +1,4 @@
-@API
+
 Feature: Lesson_Program_Creation
   Scenario: Vice_Dean_Creates_Lesson_Program
     Given user is authorised as vice Dean and the credentials are "ViceDeanHamed"_"Nargis211400"

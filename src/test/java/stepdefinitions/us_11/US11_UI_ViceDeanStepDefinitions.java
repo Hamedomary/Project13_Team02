@@ -6,7 +6,7 @@ import pages.us_11.US11_ViceDeanLocators;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class US11_ViceDeanStepDefinitions {
+public class US11_UI_ViceDeanStepDefinitions {
 
     US11_ViceDeanLocators viceDeanLocators = new US11_ViceDeanLocators();
 

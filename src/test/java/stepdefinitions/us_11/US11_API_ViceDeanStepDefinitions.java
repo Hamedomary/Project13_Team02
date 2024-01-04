@@ -13,8 +13,9 @@ import pojos.us_11.ObjectDTO;
 import java.util.ArrayList;
 import java.util.List;
 
-import static base_url.BaseUrl.setUp;
-import static base_url.BaseUrl.spec;
+
+import static baseurls.BaseUrl.setUp;
+import static baseurls.BaseUrl.spec;
 import static io.restassured.RestAssured.given;
 
 public class US11_API_ViceDeanStepDefinitions {
@@ -24,15 +25,15 @@ public class US11_API_ViceDeanStepDefinitions {
 
     @Given("user is authorized as {string}")
     public void userIsAuthorizedAs(String role) {
-        role = role.trim().toLowerCase();
-        switch (role){
-            case "admin":
-                setUp();
-                break;
-            case "vicedean":
-                setUp();
-                break;
-        }
+//        role = role.trim().toLowerCase();
+//        switch (role){
+//            case "admin":
+//                setUp();
+//                break;
+//            case "vicedean":
+//                setUp();
+//                break;
+//        }
 
     }
 

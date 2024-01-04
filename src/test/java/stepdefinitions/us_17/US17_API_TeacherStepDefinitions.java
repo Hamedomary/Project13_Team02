@@ -9,7 +9,8 @@ import pojos.us_17.ObjectDTO;
 import pojos.us_17.StudentInfoPostDTO;
 import pojos.us_17.StudentInfoResponseDTO;
 
-import static base_url.BaseUrl.spec;
+
+import static baseurls.BaseUrl.spec;
 import static io.restassured.RestAssured.given;
 
 public class US17_API_TeacherStepDefinitions {

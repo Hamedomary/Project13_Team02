@@ -1,4 +1,4 @@
-@API2 @alanur
+@alanur
 Feature: Lesson_Program_Creation
   Scenario: Vice_Dean_Creates_Lesson_Program
     Given user is authorised with "ViceDeanALANUR" and "a1234567S"

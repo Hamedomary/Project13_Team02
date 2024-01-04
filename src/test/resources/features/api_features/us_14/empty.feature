@@ -1,4 +1,4 @@
-@API2
+@API12
   Feature:Teacher_Creation_Test
     Background:Common_Steps
       Given user is authorised as vice Dean Hamed and the credentials are "ViceDeanHamed"_"Nargis211400"

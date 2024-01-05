@@ -1,4 +1,4 @@
-package stepdefinitions;
+package stepdefinitions.us_11;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -9,6 +9,7 @@ import org.junit.Assert;
 import pojos.us_11.LessonProgramPostDTO;
 import pojos.us_11.LessonProgramResponseDTO;
 import pojos.us_11.ObjectDTO;
+import utilities.ConfigReader;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,18 +24,13 @@ public class US11_API_ViceDeanStepDefinitions {
     LessonProgramPostDTO payload;
     Response response;
 
-    @Given("user is authorized as {string}")
-    public void userIsAuthorizedAs(String role) {
-//        role = role.trim().toLowerCase();
-//        switch (role){
-//            case "admin":
-//                setUp();
-//                break;
-//            case "vicedean":
-//                setUp();
-//                break;
-//        }
+    @Given("user is authorized as {string} {string}")
+    public void userIsAuthorizedAs(String us11_username, String us11_password) {
 
+        String username = ConfigReader.getProperty(us11_username);
+        String password = ConfigReader.getProperty(us11_password);
+
+        setUp(username, password);
     }
 
     @And("user sets Url for lesson program create")

@@ -1,4 +1,4 @@
-package stepdefinitions;
+package stepdefinitions.us_17;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -15,7 +15,7 @@ import static io.restassured.RestAssured.given;
 
 public class US17_API_TeacherStepDefinitions {
 
-    StudentInfoPostDTO payload;
+    public static StudentInfoPostDTO payload;
     Response response;
 
     @And("user sets Url for saving grades")

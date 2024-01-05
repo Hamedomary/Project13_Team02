@@ -6,11 +6,13 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import utilities.ConfigReader;
 import utilities.Driver;
 
 import java.time.Duration;
 
 import static baseurls.BaseUrl.setUp;
+import static io.restassured.RestAssured.baseURI;
 
 public class Hooks {
 
@@ -30,6 +32,7 @@ public class Hooks {
         Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         Driver.getDriver().manage().window().maximize();
     }
+
     @After ("@UI")
     public static void tearDown(){
         Driver.closeDriver();
@@ -38,5 +41,10 @@ public class Hooks {
 //    public static void beforeApi(){
 //        setUp("ViceDeanHamed","Nargis211400");
 //    }
+
+    @Before("@API")
+    public static void BeforeApi(){
+        baseURI = ConfigReader.getProperty("base_uri");
+    }
 }
 

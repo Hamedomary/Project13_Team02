@@ -137,5 +137,14 @@ public class ItemSearchGoogle {
     }
 
 
+    @Then("Verifies \\(Required) text message is appeared under start time field")
+    public void verifiesRequiredTextMessageIsAppearedUnderStartTimeField() {
+        assertTrue( lessonProgramPage.startTimeRequiredMessage.getText().contains("Required"));
+    }
 
+    @And("Verifies \\(Required) text message is appeared under stop time field")
+    public void verifiesRequiredTextMessageIsAppearedUnderStopTimeField() {
+
+        assertTrue(   lessonProgramPage.stopTimeRequiredMessage.getText().contains("Required"));
+    }
 }

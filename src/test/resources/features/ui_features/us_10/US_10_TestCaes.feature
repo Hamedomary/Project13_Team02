@@ -1,4 +1,4 @@
-@Unit_Test
+@Smoke_Test011
 Feature: google_search_feature
 
 Background: Login_to_the_Application
@@ -50,4 +50,13 @@ Background: Login_to_the_Application
     And Enters "0100"a Stop time in the Stop Time field
     And Clicks on Submit button
     Then Verifies the (Error: start time must not be greater than or equal to stop time) message is appeared
+    And close the driver
+
+  @test5
+  Scenario: TC05 Unsuccessful lesson program creation
+    And Selects a lesson from Choose Lessons dropDown
+    And Selects an education term from education term dropdown
+    And Selects a day from Choose day dropdown
+    Then Verifies (Required) text message is appeared under start time field
+    And Verifies (Required) text message is appeared under stop time field
     And close the driver

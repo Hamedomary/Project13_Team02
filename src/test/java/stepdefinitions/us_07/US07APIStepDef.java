@@ -10,8 +10,8 @@ import io.restassured.specification.RequestSpecification;
 import pojos.us_07.ContactObjectPojo;
 import pojos.us_07.Deanpojo;
 
-import static baseurls.BaseUrl.setUp;
-import static io.restassured.path.json.JsonPath.given;
+
+
 import static junit.framework.TestCase.assertEquals;
 
 public class US07APIStepDef {
@@ -37,7 +37,10 @@ public class US07APIStepDef {
 
         }
 
-        @And("user sets th url for dean_GO")
+    private void setUp(String username, String password) {
+    }
+
+    @And("user sets th url for dean_GO")
         public void userSetsThUrlForDean_GO() {
 
             payLoad = new Deanpojo("DeanGul", "DeanGul123");
